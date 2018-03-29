@@ -13,6 +13,12 @@ Chimera detection is done as follows:
 2. if there is a gap that starts at a position strictly after the beginning of the read and ends strictly before the end of the read, the read is marked as `Chimeric`
 3. if there is a gap of length > 0.8 * read length, the read is marked as `Not_covered`
 
+## Why we create yacrd
+
+The long read correction tools usually detect and also manage chimeras, but it is difficult to isolate or retrieve information on this step.
+
+DAStrim (from [DASCRUPPER suit](https://github.com/thegenemyers/DASCRUBBER) does a similar job to yacrd, but yacrd is simpler and easier to use.
+
 ## Input
 
 PAF (Pairwise Alignement Format) file produced by [https://github.com/lh3/minimap2](minimap2).
